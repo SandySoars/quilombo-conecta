@@ -63,7 +63,7 @@ def criar_demanda():
             imagem_bytes = imagem.read() if imagem else None
             nome_imagem = imagem.name if imagem else None
             usuario_email = st.session_state.get("email", "anonimo@exemplo.com")
-            salvar_demanda(titulo, descricao, categoria, imagem_bytes, nome_imagem, usuario_email)
+            salvar_demanda(titulo, descricao, categoria, nome_imagem)
             st.success("✅ Sua demanda foi enviada com sucesso para o feed!")
             st.balloons()
             st.session_state["pagina"] = "feed"
