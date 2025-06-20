@@ -93,7 +93,7 @@ def visualizar_por_categoria():
         if nome_imagem:
             st.markdown(f"*Imagem anexada: {nome_imagem}*")
         st.markdown("---")
-    st.markdown("### teste")
+    st.markdown("###")
     menu_inferior()
 
 # ----------------------------
